@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture World - Premium Furniture</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d97706;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d97706;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            background-color: #d97706;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #b45309;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: #222;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #d97706;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 12px;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            padding: 10px;
+        }
+
+        .feature-item h4 {
+            color: #d97706;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Furniture World</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Apne Ghar ko Banayein Aur Bhi Khubsurat - Premium Furniture ke Saath</h1>
+        <p>Humare paas hai modern, stylish aur durable furniture ka ek behtareen collection jo aapke ghar ke har kone ko ek naya roop dega.</p>
+        <a href="#categories" class="btn">Shop Now</a>
+    </section>
+
+    <div class="container" id="categories">
+        <h2>Product Categories</h2>
+        <div class="categories">
+            
+            <div class="card">
+                <h3>Living Room</h3>
+                <p><strong>Sofa Sets:</strong> Aapke aaram aur style ke liye design kiye gaye comfortable sofas jo aapke living room ki shaan badhate hain.</p>
+                <p><strong>Coffee Tables:</strong> Aapke guests ke sath chai aur coffee ka maza lene ke liye stylish coffee tables.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Bedroom</h3>
+                <p><strong>Beds:</strong> Ek achhi neend ke liye humare stylish aur sturdy beds, jo aapke bedroom ko ek shanti aur comfort ka mahol dete hain.</p>
+                <p><strong>Wardrobes:</strong> Apne kapde aur accessories ko organize karne ke liye spacious aur elegant wardrobes.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Office</h3>
+                <p><strong>Ergonomic Chairs & Desks:</strong> Productivity badhane ke liye comfortable aur modern office furniture.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section" id="about">
+        <h2>Humare Bare Mein</h2>
+        <p>2004 se hum aapke gharon ko comfort aur style se sajane mein madad kar rahe hain. Humara lakshya hai premium quality aur affordable prices ka perfect blend pradan karna.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <h4>Premium Materials</h4>
+                <p>Har product premium wood aur high-quality materials se bana hai.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Expert Craftsmanship</h4>
+                <p>Hamare designs mein style aur durability dono ka dhyan rakha jata hai.</p>
+            </div>
+            <div class="feature-item">
+                <h4>Customer Support</h4>
+                <p>Hum aapki suvidha ke liye hamesha uplabdh hain.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Furniture World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

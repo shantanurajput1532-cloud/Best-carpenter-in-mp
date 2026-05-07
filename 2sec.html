@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories - Furniture World</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d97706;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d97706;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 38px;
+            color: #222;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 20px;
+            color: #d97706;
+            font-size: 26px;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Furniture World</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Product Categories</h2>
+        <div class="categories">
+            
+            <div class="card">
+                <h3>Living Room</h3>
+                <p><strong>Sofa Sets:</strong> Aapke aaram aur style ke liye design kiye gaye comfortable sofas jo aapke living room ki shaan badhate hain.</p>
+                <p><strong>Coffee Tables:</strong> Aapke guests ke sath chai aur coffee ka maza lene ke liye stylish coffee tables.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Bedroom</h3>
+                <p><strong>Beds:</strong> Ek achhi neend ke liye humare stylish aur sturdy beds, jo aapke bedroom ko ek shanti aur comfort ka mahol dete hain.</p>
+                <p><strong>Wardrobes:</strong> Apne kapde aur accessories ko organize karne ke liye spacious aur elegant wardrobes.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Office</h3>
+                <p><strong>Ergonomic Chairs & Desks:</strong> Productivity badhane ke liye comfortable aur modern office furniture.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Furniture World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
